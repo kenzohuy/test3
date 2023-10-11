@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang web hỗ trợ quản lý sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header, footer {
+            background-color: #53dcf4;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #7e6fdf;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="submit"] {
+            margin: 10px;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #D9D9D9;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .product-button {
+            background-color: #6EBBA8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>           We.b Bá Bán Áo polo rẻ và đẹp nhất</h1>
+    </header>
+    <header>
+        <img src="logo.img.png" alt="Logo" class="logo">
+    </header>
+    <style>
+        .logo {
+            position: absolute;
+            top: 11px;
+            left: 11px;
+            width: 135px;
+            height: auto;
+        }
+    </style>
+
+    <nav>
+        <a href="#product">Sản phẩm</a> |
+        <a href="#user-info">Thông tin người dùng</a> |
+        <a href="login.html">Đăng nhập</a> |
+        <a href="register.html">Đăng ký</a>
+    </nav>
+
+    <section id="product" class="container">
+        <h2>Danh sách sản phẩm</h2>
+        <table>
+            <tr>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+            </tr>
+            <tr>
+                <td>SP001</td>
+                <td>Áo polo trắng</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>SP002</td>
+                <td>Áo polo đen</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>SP003</td>
+                <td>Áo polo tím</td>
+                <td>8</td>
+            </tr>
+			<tr>
+                <td>SP004</td>
+                <td>Áo polo xanh</td>
+                <td>4</td>
+            </tr>
+			<tr>
+                <td>SP005</td>
+                <td>Áo polo đỏ</td>
+                <td>5</td>
+            </tr>
+			<tr>
+                <td>SP006</td>
+                <td>Áo polo vàng</td>
+                <td>5</td>
+            </tr>
+			<tr>
+                <td>SP007</td>
+                <td>Áo polo cam</td>
+                <td>5</td>
+            </tr>
+
+        </table>
+        <button class="product-button" onclick="sortProductByAmount()">Sắp xếp</button>
+    </section>
+
+    <section id="user-info" class="container">
+        <h2>Thông tin người dùng</h2>
+        <img class="avatar" src="avatar.img.jpg" alt="Avatar">
+        <p>Họ và tên: Lê nhật Huy</p>
+        <p>Vai trò: Administrator</p>
+        <p>Lần đăng nhập gần nhất: 04/10/2023</p>
+        <p><a href="login.html">Đăng xuất</a></p>
+    </section>
+    <header>
+        <div class="logo-container">
+            <a href="https://www.facebook.com/profile.php?id=100076655537707">
+                <img src="logofb.img.png" alt="Logo Facebook" class="logo-fb">
+            </a>
+            <div class="zalo-info">
+                <a href="https://chat.zalo.me/"></a>
+                <img src="logozl.img.png" alt="Logo zalo" class="logo-zl">
+                <span>0328569010</span>
+            </div>
+        </div>
+    </header>
+    
+    <style>
+        header {
+            background-color: #53dcf4;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+    
+        .logo-fb {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .logo-zl {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    
+        .zalo-info {
+            display: flex;
+            align-items: center;
+        }
+    
+        .zalo-info a {
+            margin-right: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <footer>
+        <p>Bản quyền © 2023 Kenshop@gmail.com</p>
+    </footer>
